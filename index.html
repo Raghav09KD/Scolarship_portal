@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,20 +17,250 @@
             No.1, THIRD FLOOR, YANAM VENKATACHALAM PILLAI STREET</br>
             PUDUCHERRY-605 001</br>
             Tel. No.0413-2343268 <br>
-        </h3>
+            </h3>
 
-        <h3 align="center">
-            FORM – 1 <br>
-            {See clause 7(1)} <br>
-            Application for Grant of Educational Scholarship, <br>
-            Ad hoc Grant, etc., to the Minority Muslim Students <br> <br> <br>
-        </h5>
+            <h3 align="center">
+                FORM – 1 <br>
+                {See clause 7(1)} <br>
+                Application for Grant of Educational Scholarship, <br>
+                Ad hoc Grant, etc., to the Minority Muslim Students <br> <br> <br>
+                </h5>
 
-        <form style="margin: 50px;">
-            <label for="fname"> 1. Name (IN full block letters):</label>
-            <input type="text" id="name" name="name"><br><br>
-        </form>
+                <form style="margin: 50px;">
+                    <table>
+                        <tr>
+                            <td><label>1. Name</label></td>
+                            <td><input type="text" name="name" /></td> <br>
+                        </tr>
+
+                        <tr>
+                            <td><label>2. Place of Birth</label></td>
+                            <td><input type="text" name="POB" /></td> <br>
+                        </tr>
+
+
+                        <tr>
+                            <td><label>3. Date of Birth</label></td>
+                            <td><input type="date" name="DOB" /></td> <br>
+                        </tr>
+
+
+                        <tr>
+                            <td><label>4. Gender</label></td>
+                            <td>
+                                <input type="radio" name="gender">Male
+                                <input type="radio" name="gender">Female
+                                <input type="radio" name="gender">Other
+                            </td>
+                        </tr><br>
+
+                        <tr>
+                            <td><label for="">5. Address for correspondence:</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> &nbsp; &nbsp; &nbsp; a) Address</label></td>
+                            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> &nbsp; &nbsp; &nbsp; b) Pincode</label></td>
+                            <td><input type="Phone" name="Pincode" maxlength="6"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> &nbsp; &nbsp; &nbsp; c) Phone.NO</label></td>
+                            <td><input type="Phone" name="Phoneno" maxlength="10"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>7. (i) Father’s Name (in Block letters) </label></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>&nbsp; &nbsp; &nbsp; a) Occupation</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> &nbsp; &nbsp; &nbsp; b) Total annual income of Parents <br> (Attach Income
+                                    Affidavit in
+                                    Form – III)</label></td>
+                            <td><input type="number"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>7. (ii) Guardian’s Name (if applicable)</td>
+                            <td><input type="text"> </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td><label> &nbsp; &nbsp; &nbsp; a) Occupation</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label> &nbsp; &nbsp; &nbsp; b)Total annual income of Guardian <br> (Attach Income
+                                    Affidavit
+                                    in Form – III)
+                                </label></td>
+                            <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            <td>8. Details of bank account of student:- (Please enclose self attested copy of Bank Pass
+                                Book)</td>
+                        </tr>
+
+                        <tr>
+                            <td>1. Name of the Account holder (as in the bank account): </td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>2. Name of the Bank:- </td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3. Name of the Branch:- </td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4. Bank Account Number:- </td>
+                            <td><input type="phone" maxlength="14"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>5. Type of bank Account:-</label></td>
+                            <td>
+                                <input type="radio" name="gender">Savings
+                                <input type="radio" name="gender">Current
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6. IFSC code of the Bank:-</td>
+                            <td><input type="text" maxlength="14"></td>
+                        </tr>
+
+                        <tr>
+                            <td>9. Details of educational qualifications:- (Please enclose self attested copies of
+                                certificates)</td>
+                        </tr>
+                    </table>
+
+                    <table rules="all" border=3>
+                        <tr>
+                            <td>SI.NO</td>
+                            <td>Examination passed</td>
+                            <td>School / Institute / Board / University </td>
+                            <td>Year of Passing</td>
+                            <td>Percentage of passing</td>
+                            <td>Division / Class/ Grade</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="number" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td>10. &nbsp; &nbsp; &nbsp; a)Name and full address of the <br>
+                                &nbsp; &nbsp; &nbsp; institution, Where admission has been
+                                secured for the current academic year:
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                &nbsp; &nbsp; &nbsp; b)Date of Addmission:
+                            </td>
+                            <td>
+                                <input type="date">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                &nbsp; &nbsp; &nbsp; c)Class in which the applicant is
+                                studying at present:
+                            </td>
+
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                d) Course and Subject taken:
+                            </td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                e) Duration of course( No .in years):
+                            </td>
+
+                            <td>
+                                <input type="phone" maxlength="1">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
     </div>
+
     <div id="submit" style="align-items: center; display: flex; justify-content: center;">
         <button onclick="generatepdf()">Print</button>
 
